@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} CRUD management system {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}" />
+  </head>
+  <body>
+    <div>
+      <nav class="navbar-brand-holder">
+        <a class="navbar-brand" href="{% url 'list' %}">EMPLOYEE MANAGEMENT</a>
+      </nav>
+      <div>{% block content %} {% endblock %}</div>
+    </div>
+    <script src="{% static 'JS/main.js' %}"></script>
+  </body>
+</html>

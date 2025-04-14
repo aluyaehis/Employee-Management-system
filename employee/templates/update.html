@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+{% block title %} Create Employee {% endblock %}
+
+{% block content %}
+<h2> Update The Employee</h2>
+<form action="" method="post" class="form-group">
+    {%csrf_token%}
+    {{form.as_p}}
+    <button type="submit" class="btn-primary">Save Employee</button><br/><br/>
+    <a href="{%url 'list'%}" class="btn-secondary">Cancel</a>
+</form>
+{% endblock %}
