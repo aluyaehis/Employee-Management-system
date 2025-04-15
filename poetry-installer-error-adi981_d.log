@@ -1,0 +1,30 @@
+Unable to create process using '"C:\Users\ADMIN\miniconda3\python.exe" -W ignore::DeprecationWarning -c "
+import runpy
+import sys
+sys.path = ['C:\\Users\\ADMIN\\AppData\\Local\\Temp\\tmpj6iagp_3\\pip-24.0-py3-none-any.whl'] + sys.path
+sys.argv[1:] = ['install', '--no-cache-dir', '--no-index', '--find-links', 'C:\\Users\\ADMIN\\AppData\\Local\\Temp\\tmpj6iagp_3', '--upgrade', 'pip']
+runpy.run_module(\"pip\", run_name=\"__main__\", alter_sys=True)
+"'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\ADMIN\miniconda3\Lib\ensurepip\__main__.py", line 5, in <module>
+    sys.exit(ensurepip._main())
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\miniconda3\Lib\ensurepip\__init__.py", line 284, in _main
+    return _bootstrap(
+           ^^^^^^^^^^^
+  File "C:\Users\ADMIN\miniconda3\Lib\ensurepip\__init__.py", line 200, in _bootstrap
+    return _run_pip([*args, *_PACKAGE_NAMES], additional_paths)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\miniconda3\Lib\ensurepip\__init__.py", line 101, in _run_pip
+    return subprocess.run(cmd, check=True).returncode
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\miniconda3\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['C:\\Users\\ADMIN\\AppData\\Roaming\\pypoetry\\venv\\Scripts\\python.exe', '-W', 'ignore::DeprecationWarning', '-c', '\nimport runpy\nimport sys\nsys.path = [\'C:\\\\Users\\\\ADMIN\\\\AppData\\\\Local\\\\Temp\\\\tmpj6iagp_3\\\\pip-24.0-py3-none-any.whl\'] + sys.path\nsys.argv[1:] = [\'install\', \'--no-cache-dir\', \'--no-index\', \'--find-links\', \'C:\\\\Users\\\\ADMIN\\\\AppData\\\\Local\\\\Temp\\\\tmpj6iagp_3\', \'--upgrade\', \'pip\']\nrunpy.run_module("pip", run_name="__main__", alter_sys=True)\n']' returned non-zero exit status 101.
+
+Traceback:
+
+  File "<stdin>", line 937, in main
+  File "<stdin>", line 576, in run
