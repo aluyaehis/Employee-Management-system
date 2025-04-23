@@ -23,12 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(c2rjf05rbi%=^_t3gt((a31mp#3$mmosth13ytk#bs116h=8v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'employee-management-system-11.onrender.com',
     '0.0.0.0'
+]
+
+CSRF_TRUSTED_ORIGIN =[
+    'https://employee-management-system-11.onrender.com/'
 ]
 
 
