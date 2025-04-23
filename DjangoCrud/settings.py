@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'employee-management-system-11.onrender.com',
+    'employee-management-system-13.onrender.com',
     '0.0.0.0'
 ]
 
